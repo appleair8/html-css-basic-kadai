@@ -1,0 +1,30 @@
+body {
+  font-family:"Arial","Meiryo",sans-serif;
+  font-size:20px;
+  text-align: center;
+  }
+#first-heading {
+  font-family:"Josefin Sans";
+  font-size: 40px;
+  text-shadow: 10px 10px 2px gray;
+  letter-spacing:1.2em ;
+  text-decoration:underline rgb(115,115,114);
+
+}
+#basic p {
+  font-weight: bold;
+}
+.word-m{
+  color: skyblue;
+}
+.word-p {
+  color:rgb(255, 192, 203);
+}
+ /* 「名前」「血液型」「好きな食べ物」の見出しにはピンク*/
+.second-heading { 
+  color: rgb(255, 192, 203);
+}
+.third-heading {
+  color: skyblue;
+}
+
