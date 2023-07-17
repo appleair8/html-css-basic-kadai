@@ -1,101 +1,89 @@
-body {
-  margin: 0 0 0 0;
+body{
+  margin: 0px;
 }
 
-header {
-  margin-bottom: 20px ;
-  background-color: rgb(244,79,79);
-  text-align: center;
+header{
+  margin-bottom:20px;
+  background-color:rgb(244,79,79);
+  text-align:center;
 }
 
-main {
-  padding:10px,10px,10px,10px;
+main{
+  padding:10px;
 }
 
-h1  {
+h1{
   color:rgb(255,255,255);
-  margin: 0 0 0 0;
+  margin: 0px;
 }
 
-p {
+p{  
   font-size: 20px;
-  margin:0 0 0 0;
+  margin:0px;
 }
-.parent  {
-  display:flexbox;
+
+#parent  {
+  display:flex;
   justify-content:space-between; 
 
 }
 
-.contents  { 
-  border: solid 3px rgb(238,204,204);
-  flex-basis: 25%;
+.contents{ 
+  border:solid 3px rgb(238,204,204);
+  flex-basis:25%;
   padding:10px 15px 10px 15px ;
-  margin:20px 0 20px 0 ;
-  margin-left: auto;
-  margin-right: auto;
-  
-
+  margin:20px 0px 20px 0px ;
+  text-align:center;
 }
 
-.contents-title::before {
-  content:"●" ;
-  color: rgb(239,111,139);
+h2::before{
+  content:"●";
+  color:rgb(239,111,139);
 
 } 
 
-.contents-title {
-  font:25px ;
-  text-decoration: underline  dotted rgb(239,111,139) 3px;
-   text-align: center;
+h2{
+  font-size:25px;
+  border-bottom:3px dotted rgb(236,122,122);
+  text-align: center;
    font-weight:bold;
-  
   }
 
-
-.contents-child::first-letter {
-  color:rgb(97,206,249);
-  font-weight: bold;
+.contents p:nth-of-type(2)::first-letter { 
+    font-weight:bold;
+    color: rgb(97, 206, 249);
   }
 
+p {
+  margin:0px;
+  font-size:20px;
+  text-align:center;
+}
 
-.contents-child {
-  margin:0 0 0 0;
+img {
+  margin:10px 0px 10px 0px ;
+  width:70%;
+}
+
+footer{ 
+  background-color:rgb(244,79,79);
+  text-align:center;
+}
+
+a{
   font-size: 20px;
-  text-align: center;
+  color:rgb(255,255,255);
 }
 
-.images {
-  margin:10px 0 10px 0 ;
-  width: 70%;
+a:hover{
+  color: rgb(245,178,168);  
 }
 
-footer { 
-  color: rgb(255,255,255);
-  background-color: rgb(244,79,79);
-  text-align: center;
+a:link{
+  color: rgb(193,234,251);
 }
 
-#footer-link:link {
-  color: rgb(255,255,255);
-}
-
-
-#footer-link:hover {
-  color:rgb(245,178,168);
-}
-
-#footer-link:visited {
-   color:rgb(193,234,251);
-}
-
-/* 以下の例では、画面幅が768px以下のときにスタイルが適用されます */
 @media screen and (max-width: 768px) {
-
-  div {
-       display: inline-block;
-  }
-}
 
 h2  {
   font-size: 30px;
@@ -104,8 +92,9 @@ h2  {
 p {
   font-size: 25px;
 }
-.parent  {
-  display:flexbox;
+#parent  {
+  display: inline-block;
   justify-content:space-between; 
 
+}
 }
