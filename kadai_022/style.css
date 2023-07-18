@@ -79,9 +79,11 @@ a:hover{
   color: rgb(245,178,168);  
 }
 
-a:link{
+
+a:visited{
   color: rgb(193,234,251);
 }
+  
 
 @media screen and (max-width: 768px) {
 
